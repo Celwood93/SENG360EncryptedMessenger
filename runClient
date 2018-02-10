@@ -1,0 +1,7 @@
+#! /bin/bash
+
+mkdir classes 2> test.txt
+rm test.txt
+
+javac -d classes Client.java
+java -cp $CLASSPATH:./classes/ Client
